@@ -140,7 +140,7 @@
 <!--             <span class="paper-block"><b style="color:#f41c1c">ICLR 2024 Oral</b> (85 in 7304, 1.2%)</span> -->
           </div>
 
-            <section>
+<!--             <section>
               <div class="section" id="org-banners" style="display:flex">
                 <a href="https://qwenlm.github.io/" target="_blank" rel="external">
                     <img class="center-block org-banner" src="static/images/qwen.png" style="background-color: white">
@@ -149,7 +149,7 @@
                     <img class="center-block org-banner" src="static/images/sjtu.png" style="background-color: white">
                 </a>
               </div>
-            </section>
+            </section> -->
         
 
           <div class="column has-text-centered">
@@ -308,19 +308,17 @@
           Mathematics serves as a fundamental field for evaluating LLM reasoning intelligence. However, the in-depth relationship between “language” and “reasoning” remains underexplored. Existing multilingual mathematical datasets are too simple to evaluate the reasoning capabilities of advanced LLMs effectively. This suggests that multilingual mathematical reasoning benchmarks have not kept pace with the progress in LLM reasoning abilities, as most advanced and challenging benchmarks are available only in English. Therefore, creating a challenging multilingual mathematical reasoning benchmark is crucial for studying multilingual reasoning abilities in the current era of LLMs.
           </p>
           <p>
-          To bridge this gap, we build <b>PolyMath</b>, a multilingual mathematical reasoning benchmark ensuring difficulty comprehensiveness, language diversity, and high-quality translation.
+          To bridge this gap, we build <img src="static/images/pyramid.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>
+            <span class="mathvista">PolyMath</span>, a multilingual mathematical reasoning benchmark covering <b>18 languages</b> and <b>4 easy-to-hard difficulty levels</b>, with <b>9,000</b> samples in total.
+            Our benchmark ensures <b>difficulty comprehensiveness, language diversity, and high-quality translation</b>, making it a highly discriminative multilingual mathematical benchmark in the era of reasoning LLMs.
           </p>
           <p>
-          <b>Large Language Models (LLMs)</b> and <b>Large Multimodal Models (LMMs)</b> exhibit impressive problem-solving skills in many tasks and domains, but their ability in mathematical reasoning in visual contexts has not been systematically studied.
-          </p>
-          <p>
-            To bridge this gap, we present <img src="static/images/mathvista.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>
-            <span class="mathvista">MathVista</span>, a benchmark designed to combine challenges from diverse mathematical and visual tasks. It consists of <b>6,141 examples</b>, derived from <b>28 existing multimodal datasets</b> involving mathematics and <b>3 newly created datasets</b> (i.e., <b>IQTest, FunctionQA, and PaperQA</b>). Completing these tasks requires fine-grained, deep visual understanding and compositional reasoning, which all state-of-the-art foundation models find challenging. 
-          </p>
-          <p>
-            With <img src="static/images/mathvista.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>
-            <span class="mathvista">MathVista</span>, we have conducted <b>a comprehensive, quantitative evaluation of 12 prominent foundation models</b>. The best-performing <b>GPT-4V</b> model achieves an overall accuracy of <b>49.9%</b>, substantially outperforming Bard, the second-best performer, by <b>15.1%</b>. Our in-depth analysis reveals that the superiority of <b>GPT-4V</b> is mainly attributed to its enhanced visual perception and mathematical reasoning. However, <b>GPT-4V</b> still falls short of human performance by <b>10.4%</b>, as it often struggles to understand complex figures and perform rigorous reasoning. This significant gap underscores the critical role that <img src="static/images/mathvista.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>
-            <span class="mathvista">MathVista</span> will play in the development of general-purpose AI agents capable of tackling mathematically intensive and visually rich real-world tasks. We further explore the new ability of <b>self-verification</b>, the use of <b>self-consistency</b>, and the  <b>goal-directed multi-turn human-AI dialogues</b>, highlighting the promising potential of GPT-4V for future research. 
+            With <img src="static/images/pyramid.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>
+            <span class="mathvista">PolyMath</span>, we conduct extensive experiments on advanced non-reasoning and reasoning LLMs, finding that even <b>Deepseek-R1-671B</b> and <b>Qwen-QwQ-32B</b> achieve benchmark scores of only <b>43.4</b> and <b>41.8</b>, with accuracy below 30% at the highest level.
+            Crucially, <b>reasoning performance varies widely across languages</b>, with differences of up to <b>10 points</b> even at low accuracy settings.
+            Beyond performance, we further explore the <i>consistency between input and output languages</i>, the <i>variation in thinking length across different languages</i>, and the <i>impact of controlling the model's response language on performance</i>. These offer insights into the slow-thinking pattern in multilingual contexts.
+            We hope <b><img src="static/images/pyramid.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>
+            <span class="mathvista">PolyMath</span> serves as a strong benchmark to advance the research of multilingual mathematical reasoning</b>.
           </p>
         </div>
       </div>
