@@ -50,6 +50,10 @@
   <script src="./data/results/model_scores.js" defer></script>
 
   <script src="./visualizer/data/data_public.js" defer></script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  
 </head>
 <body>
 
@@ -255,6 +259,8 @@
 
 
 
+
+  
 <section class="section">
   <div class="container" style="margin-bottom: 2vh;">
     <!-- Abstract. -->
@@ -285,6 +291,31 @@
 </div>
 </section>
 
+
+
+  <section class="section">
+  <div class="container" style="margin-bottom: 2vh;">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Benchmark Score</h2>
+        <div class="content has-text-justified">
+          <p>
+          We design <b style="color: red">Difficulty-Weighted Accuracy (DW-ACC)</b> for the benchmark score of <img src="static/images/pyramid.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>
+            <span class="mathvista">PolyMath</span>.
+          </p>
+          <p>
+          <img src="static/images/pyramid.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>
+            <span class="mathvista">PolyMath</span> includes four difficulty levels: low, medium, high, and top. To effectively distinguish the contribution of correctly answered problems at each level to the final score, we set difficulty weights. Specifically, let the accuracies at the four levels be denoted as \( \{a_i\}_{i=1}^4 \). We define the weights as \( w_1 = 1 \), \( w_i = 2w_{i-1} \) for \( i = 2, 3, 4 \). The benchmark score is then given by: $$\sum_{i=1}^4 \left( \frac{2^{i-1}}{15}a_i \right).$$
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+</div>
+</section>
+
+  
 <section class="section">
   <div class="container">
     
