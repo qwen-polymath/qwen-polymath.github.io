@@ -306,7 +306,7 @@
           </p>
           <p>
           <img src="static/images/pyramid.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>
-            <span class="mathvista">PolyMath</span> includes four difficulty levels: low, medium, high, and top. To effectively distinguish the contribution of correctly answered problems at each level to the final score, we set difficulty weights. Specifically, let the accuracies at the four levels be denoted as \( \{a_i\}_{i=1}^4 \). We define the weights as \( w_1 = 1 \), \( w_i = 2w_{i-1} \) for \( i = 2, 3, 4 \). The benchmark score is then given by: $$\sum_{i=1}^4 \left( \frac{2^{i-1}}{15}a_i \right).$$
+            <span class="mathvista">PolyMath</span> includes four difficulty levels: low, medium, high, and top. To effectively distinguish the contribution of correctly answered problems at each level to the final score, we set difficulty weights. Specifically, let the accuracies at the four levels be denoted as \( \{a_i\}_{i=1}^4 \). We define the weights as \( w_1 = 1 \), \( w_i = 2w_{i-1} \) for \( i = 2, 3, 4 \). The benchmark score is then given by: $$\text{DW-ACC} = \frac{\sum_{i=1}^4 w_i a_i}{\sum_{i=1}^4 w_i} = \sum_{i=1}^4 \left( \frac{2^{i-1}}{15}a_i \right).$$
           </p>
         </div>
       </div>
